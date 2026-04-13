@@ -1,0 +1,11 @@
+[project]
+name = "launchprogress"
+version = "0.1.0"
+description = "Visual countdown timer using the Novation Launchpad Mini MK3"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "lpminimk3>=0.6.4",
+    "fastapi>=0.115",
+    "uvicorn>=0.34",
+]

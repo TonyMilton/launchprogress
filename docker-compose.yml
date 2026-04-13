@@ -1,0 +1,10 @@
+services:
+  launchprogress:
+    build: .
+    ports:
+      - "8000:8000"
+    # USB passthrough for the Launchpad on Linux
+    # Find device with: ls /dev/midi* or ls /dev/snd/midi*
+    devices:
+      - /dev/snd:/dev/snd
+    privileged: true
